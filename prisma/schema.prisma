@@ -1,0 +1,108 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "../generated/prisma"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model TypePayment {
+  id Int @id @default(autoincrement())
+  name String @unique @db.VarChar(50)
+  plans Plan[]
+}
+
+model PlanDescription {
+  id Int @id @default(autoincrement())
+  description String @db.VarChar(100)
+  plan Plan @relation(fields: [planId], references: [id], onUpdate: Cascade, onDelete: Cascade)
+  planId Int
+}
+
+model Plan {
+  id Int @id @default(autoincrement())
+  name String @db.VarChar(50)
+  price Float
+  category Category @relation(fields: [categoryId], references: [id])
+  categoryId Int
+  typePayment TypePayment @relation(fields: [typePaymentId], references: [id])
+  typePaymentId Int
+  descriptions PlanDescription[]
+}
+
+model Category {
+  id Int @id @default(autoincrement())
+  name String @unique @db.VarChar(50)
+  description String @db.VarChar(300)
+  slug String @unique @db.VarChar(255)
+  plans Plan[]
+  customers CategoryCustomer[]
+}
+
+model Customer {
+  id Int @id @default(autoincrement())
+  name String @unique @db.VarChar(100)
+  image String @db.VarChar(50)
+  valoration Valoration?
+  categories CategoryCustomer[]
+}
+
+model CategoryCustomer {
+  category Category @relation(fields: [categoryId], references: [id])
+  categoryId Int
+  customer Customer @relation(fields: [customerId], references: [id], onUpdate: Cascade, onDelete: Cascade)
+  customerId Int
+
+  @@id([categoryId, customerId])
+}
+
+model Valoration {
+  id Int @id @default(autoincrement())
+  review String @db.VarChar(1000)
+  stars Int @db.UnsignedTinyInt
+  customer Customer @relation(fields: [customerId], references: [id], onUpdate: Cascade, onDelete: Cascade)
+  customerId Int @unique
+}
+
+model User {
+  id Int @id @default(autoincrement())
+  name String @db.VarChar(100)
+  specialty String @db.VarChar(100)
+  image String @db.VarChar(50)
+  socialNetworks UserSocialNetwork[]
+}
+
+model SocialNetwork {
+  id Int @id @default(autoincrement())
+  name String @unique @db.VarChar(30)
+  url String @unique @db.VarChar(255)
+  icon String @db.VarChar(50)
+  users UserSocialNetwork[]
+}
+
+model UserSocialNetwork {
+  user User @relation(fields: [userId], references: [id])
+  userId Int
+  socialNetwork SocialNetwork @relation(fields: [socialNetworkId], references: [id])
+  socialNetworkId Int
+  username String
+
+  @@id([userId, socialNetworkId])
+}
+
+model Blog {
+  id Int @id @default(autoincrement())
+  title String @unique @db.VarChar(100)
+  shortDescription String @db.TinyText
+  description String @db.LongText
+  slug String @unique @db.VarChar(255)
+  image String @db.VarChar(50)
+}
+
+model AuthenticatedUsers {
+  id Int @id @default(autoincrement())
+  email String @unique @db.VarChar(320)
+  password String @db.Char(60)
+}
