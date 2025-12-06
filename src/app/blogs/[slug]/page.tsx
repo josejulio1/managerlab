@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import { prisma } from "@/lib/prisma";
 import Image from "next/image";
 import { redirect } from "next/navigation";
+import './index.css';
 
 interface Props {
     params: Promise<{ slug: string }>
@@ -41,7 +42,7 @@ export default async function BlogPage({ params }: Props) {
                     height={0}
                     sizes="100vw"
                 />
-                <p className="text-white" dangerouslySetInnerHTML={{ __html: blog.description }}></p>
+                <article className="text-white blog-content" dangerouslySetInnerHTML={{ __html: blog.description }}></article>
             </main>
             <Footer />
         </>
