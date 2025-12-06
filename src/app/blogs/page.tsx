@@ -21,7 +21,7 @@ export default async function BlogsPage() {
                 {
                     blogs.length > 0
                         ? (
-                            <ul className="grid grid-cols-3 gap-12">
+                            <ul className="lg:grid lg:grid-cols-2 xl:grid-cols-3">
                                 {
                                     blogs.map(blog => (
                                         <BlogItem
