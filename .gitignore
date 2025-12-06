@@ -43,3 +43,5 @@ next-env.d.ts
 
 docker-compose.yml
 generated
+uploads/blogs/*
+!uploads/blogs/.gitkeep
