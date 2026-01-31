@@ -9,18 +9,18 @@ export default function WelcomePage() {
                     <h1 className="text-5xl font-bold text-center uppercase">Welcome to ManagerLab</h1>
                     <article className="flex flex-col gap-y-2">
                         <h2 className="text-2xl">Welcome Aboard!</h2>
-                        <p className="text-[var(--color-surface)]">We're glad to have you here and excited to start this collaboration. You've made the investment and committed to growing your brand, now we're here to make that happen together. This is the beginning of a structured, results-focused partnership.</p>
+                        <p className="text-[var(--color-surface)]">We&apos;re glad to have you here and excited to start this collaboration. You&apos;ve made the investment and committed to growing your brand, now we&apos;re here to make that happen together. This is the beginning of a structured, results-focused partnership.</p>
                     </article>
                     <article className="flex flex-col gap-y-2">
-                        <h2 className="text-2xl">What's in this onboarding kit:</h2>
+                        <h2 className="text-2xl">What&apos;s in this onboarding kit:</h2>
                         <article className="flex flex-col gap-y-2 text-[var(--color-surface)]">
-                            <p>In the sections below, you'll learn the essential systems we use to work together effectively:</p>
+                            <p>In the sections below, you&apos;ll learn the essential systems we use to work together effectively:</p>
                             <ul className="list-disc pl-8">
                                 <li>How we organize everything in Google Drive</li>
                                 <li>How we manage tasks and projects in Trello</li>
                                 <li>How we communicate day-to-day</li>
                             </ul>
-                            <p>These systems aren't complicated, but they're critical. They keep us aligned, efficient, and accountable.</p>
+                            <p>These systems aren&apos;t complicated, but they&apos;re critical. They keep us aligned, efficient, and accountable.</p>
                         </article>
                     </article>
                     <article className="flex flex-col gap-y-2">
@@ -28,7 +28,7 @@ export default function WelcomePage() {
                         <article className="flex flex-col gap-y-2 text-[var(--color-surface)]">
                             <p>Everything we do is structured around clarity and performance:</p>
                             <ul className="list-disc pl-8">
-                                <li><span className="font-bold">Clear processes:</span> you always know what's happening and when</li>
+                                <li><span className="font-bold">Clear processes:</span> you always know what&apos;s happening and when</li>
                                 <li><span className="font-bold">Shared systems:</span> Google Drive for assets, Trello for task management, structured communication channels</li>
                                 <li><span className="font-bold">Monthly planning and reporting:</span> we plan work in advance, execute it, track it, and review results together</li>
                             </ul>
@@ -39,12 +39,12 @@ export default function WelcomePage() {
                         <article className="flex flex-col gap-y-2 text-[var(--color-surface)]">
                             <ol className="list-decimal pl-8">
                                 <li>Go through this entire onboarding kit</li>
-                                <li>Complete any onboarding materials we've shared with you</li>
-                                <li>Upload your brand assets to the Google Drive folder we've set up</li>
+                                <li>Complete any onboarding materials we&apos;ve shared with you</li>
+                                <li>Upload your brand assets to the Google Drive folder we&apos;ve set up</li>
                             </ol>
-                            <p>We'll handle the strategy, the setup, and the execution. You focus on running your business and staying in the loop with us.</p>
-                            <p>If you have any questions at any point about the process, the tools, the strategy, anything, just reach out. We're here.</p>
-                            <p>Let's build something great together.</p>
+                            <p>We&apos;ll handle the strategy, the setup, and the execution. You focus on running your business and staying in the loop with us.</p>
+                            <p>If you have any questions at any point about the process, the tools, the strategy, anything, just reach out. We&apos;re here.</p>
+                            <p>Let&apos;s build something great together.</p>
                         </article>
                     </article>
                 </section>
@@ -57,8 +57,8 @@ export default function WelcomePage() {
                         <ul className="list-disc pl-8 text-[var(--color-surface)]">
                             <li><span className="font-bold">Documents:</span> Strategies, brand guides, PDFs, and informational files</li>
                             <li><span className="font-bold">Raw Material:</span> Where you upload all content for us to use (photos, videos, graphics). Keep it organized with folders and clear file names</li>
-                            <li><span className="font-bold">Edited Content:</span> Where we upload finished work for your review (organized by year/month/post). You'll review and approve in Trello, not here</li>
-                            <li><span className="font-bold">Music:</span> (for musicians only): Upload tracks (WAV/MP3), album artwork inside album folders, and lyrics in a "Lyrics" folder. Press photos go in Raw Material</li>
+                            <li><span className="font-bold">Edited Content:</span> Where we upload finished work for your review (organized by year/month/post). You&apos;ll review and approve in Trello, not here</li>
+                            <li><span className="font-bold">Music:</span> (for musicians only): Upload tracks (WAV/MP3), album artwork inside album folders, and lyrics in a &quot;Lyrics&quot; folder. Press photos go in Raw Material</li>
                         </ul>
                     </article>
                     <article className="flex flex-col gap-y-2">
@@ -67,7 +67,7 @@ export default function WelcomePage() {
                             <p>We ALWAYS work with Drive links. Do not send raw material via WhatsApp or email. Upload to Drive first, then share the link or attach it to the relevant Trello card.</p>
                             <p>You have full edit access to create folders and upload freely. Just keep things organized and name files clearly so we both know what they are.</p>
                             <article className="mt-4">
-                                <p><span className="font-bold">New to Google Drive?</span> We've attached general tutorial links below to help you with basics like creating folders and uploading files.</p>
+                                <p><span className="font-bold">New to Google Drive?</span> We&apos;ve attached general tutorial links below to help you with basics like creating folders and uploading files.</p>
                                 <ul className="list-disc pl-8">
                                     <li><Link target="_blank" href="https://www.youtube.com/watch?v=EKjnjySLTvM" className="text-blue-400 underline">How to create a new folder</Link></li>
                                     <li><Link target="_blank" href="https://www.youtube.com/watch?v=eHnA9InXv2o" className="text-blue-400 underline">How to download files</Link></li>
@@ -98,15 +98,15 @@ export default function WelcomePage() {
                                     </ul>
                                 </li>
                                 <li><span className="font-bold">Month Plan</span> - Monthly content ideas with target posting dates. Let us know about events or priorities to include</li>
-                                <li><span className="font-bold">Resources Prepared</span> - Cards with all assets ready. Upload material to Drive's "Raw Material" folder and paste the link in the card</li>
-                                <li><span className="font-bold">In Progress</span> - We're actively working on it</li>
+                                <li><span className="font-bold">Resources Prepared</span> - Cards with all assets ready. Upload material to Drive&apos;s &quot;Raw Material&quot; folder and paste the link in the card</li>
+                                <li><span className="font-bold">In Progress</span> - We&apos;re actively working on it</li>
                                 <li><span className="font-bold">Review</span> - Final content ready for your feedback. Give actionable, specific revisions here and <span className="font-bold">always tag us in comments</span></li>
-                                <li><span className="font-bold">Approved</span> - Move cards here once approved. We'll schedule and publish</li>
+                                <li><span className="font-bold">Approved</span> - Move cards here once approved. We&apos;ll schedule and publish</li>
                                 <li><span className="font-bold">Live</span> - Content is published</li>
                             </ul>
                             <article className="mt-4">
-                                <p><span className="font-bold">Always tag us when you comment in Trello</span> so we're notified.</p>
-                                <p><span className="font-bold">Never used Trello before?</span> We've attached basic tutorial links below to help you get familiar with the platform.</p>
+                                <p><span className="font-bold">Always tag us when you comment in Trello</span> so we&apos;re notified.</p>
+                                <p><span className="font-bold">Never used Trello before?</span> We&apos;ve attached basic tutorial links below to help you get familiar with the platform.</p>
                                 <ul className="list-disc list pl-8">
                                     <li><Link target="_blank" href="https://www.youtube.com/watch?v=LKwMcTFdq80" className="text-blue-400 underline">How to create a card</Link></li>
                                     <li><Link target="_blank" href="https://www.youtube.com/watch?v=3yrXGpBIiSI" className="text-blue-400 underline">How to manage labels</Link></li>
@@ -131,27 +131,27 @@ export default function WelcomePage() {
                             <p>All feedback on posts, designs, videos, or any deliverables goes directly in the Trello card as a comment. Not WhatsApp. Not email. <span className="font-bold">In the Trello card where we’re working on that task.</span></p>
                             <p className="font-bold">Make your revisions actionable and specific:</p>
                             <ul className="list-disc list pl-8">
-                                <li>✅ "Change the headline to [this]"</li>
-                                <li>✅ "Use the second photo instead of the first one"</li>
-                                <li>✅ "Shorten the caption to two sentences"</li>
+                                <li>✅ &quot;Change the headline to [this]&quot;</li>
+                                <li>✅ &quot;Use the second photo instead of the first one&quot;</li>
+                                <li>✅ &quot;Shorten the caption to two sentences&quot;</li>
                             </ul>
-                            <p>Avoid abstract feedback like "I don't love this" or "It doesn't feel right." We can't take action on that. Be clear, be specific, and we'll move fast.</p>
+                            <p>Avoid abstract feedback like &quot;I don&apos;t love this&quot; or &quot;It doesn&apos;t feel right.&quot; We can&apos;t take action on that. Be clear, be specific, and we&apos;ll move fast.</p>
                         </article>
                         <article className="flex flex-col gap-y-2 text-[var(--color-surface)]">
                             <h4 className="font-bold">💬 WhatsApp or Google Chat – For urgent matters only</h4>
-                            <p>For urgent matters or quick reminders, like if we're missing something or you need a fast response, use your preferred method (WhatsApp or Google Chat).</p>
+                            <p>For urgent matters or quick reminders, like if we&apos;re missing something or you need a fast response, use your preferred method (WhatsApp or Google Chat).</p>
                             <p>This is for time-sensitive things, not project feedback. Keep it quick and direct.</p>
                         </article>
                         <article className="flex flex-col gap-y-2 text-[var(--color-surface)]">
                             <h4 className="font-bold">📹 Google Meet – For scheduled meetings</h4>
-                            <p>All our meetings (weekly or monthly) happen on Google Meet. These are always scheduled in advance, and you'll receive the meeting link automatically via email so you can add it to your calendar.</p>
+                            <p>All our meetings (weekly or monthly) happen on Google Meet. These are always scheduled in advance, and you&apos;ll receive the meeting link automatically via email so you can add it to your calendar.</p>
                             <p>We use this time to align on strategy, review performance, plan next steps, or discuss anything that needs a real conversation.</p>
                         </article>
                         <article className="flex flex-col gap-y-2 text-[var(--color-surface)]">
                             <h4 className="font-bold">Final note:</h4>
-                            <p>Feel comfortable reaching out whenever you need something. If you're unsure about a process, have a question, or just want to check in, we're here and happy to help.</p>
-                            <p>You've now completed the onboarding kit. You know how we use Drive, how we manage work in Trello, and how we communicate.</p>
-                            <p>Let's get to work. We're excited to see what we build together.</p>
+                            <p>Feel comfortable reaching out whenever you need something. If you&apos;re unsure about a process, have a question, or just want to check in, we&apos;re here and happy to help.</p>
+                            <p>You&apos;ve now completed the onboarding kit. You know how we use Drive, how we manage work in Trello, and how we communicate.</p>
+                            <p>Let&apos;s get to work. We&apos;re excited to see what we build together.</p>
                         </article>
                     </section>
                 </section>
