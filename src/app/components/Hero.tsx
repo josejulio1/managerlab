@@ -19,8 +19,8 @@ export default function Hero() {
                 <p className="md:text-base max-md:text-sm text-[var(--color-surface)]">We&apos;ll handle the strategy so you can focus on creating</p>
             </motion.article>
             <Image
-                className="max-xl:hidden"
-                src="/img/manager3.png"
+                className="max-xl:hidden object-contain"
+                src="/img/HEADER-1.png"
                 alt="Manager"
                 width={1000}
                 height={0}
