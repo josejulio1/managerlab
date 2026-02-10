@@ -8,22 +8,25 @@ interface Props {
 
 export default function BlogItem({ blog }: Props) {
     return (
-        <li className="flex flex-col gap-4 border border-white/20 rounded-2xl p-4">
-            <Image
-                src={`/api/uploads/blogs/${blog.image}`}
-                alt={blog.title}
-                width={0}
-                height={0}
-                sizes="100vw"
-            />
-            <section className="flex flex-col gap-1">
-                <h4 className="text-white text-4xl font-medium">{blog.title}</h4>
-                <p className="text-[var(--color-surface)] text-sm">{blog.shortDescription}</p>
+        <article className="flex flex-col justify-between gap-4 border border-white/20 rounded-2xl p-4">
+            <section className="flex flex-col gap-y-4">
+                <Image
+                    src={`/api/uploads/blogs/${blog.image}`}
+                    alt={blog.title}
+                    width={0}
+                    height={0}
+                    sizes="100vw"
+                    className="object-cover h-80!"
+                />
+                <section className="flex flex-col gap-1">
+                    <h4 className="text-white text-4xl font-medium">{blog.title}</h4>
+                    <p className="text-[var(--color-surface)] text-sm">{blog.shortDescription}</p>
+                </section>
             </section>
             <PurpleLink
                 text="Read blog"
                 href={`/blogs/${blog.slug}`}
             />
-        </li>
+        </article>
     );
 }

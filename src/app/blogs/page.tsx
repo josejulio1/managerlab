@@ -21,7 +21,7 @@ export default async function BlogsPage() {
                 {
                     blogs.length > 0
                         ? (
-                            <ul className="lg:grid lg:grid-cols-2 xl:grid-cols-3">
+                            <section className="lg:grid lg:grid-cols-2 xl:grid-cols-3 gap-8">
                                 {
                                     blogs.map(blog => (
                                         <BlogItem
@@ -30,7 +30,7 @@ export default async function BlogsPage() {
                                         />
                                     ))
                                 }
-                            </ul>
+                            </section>
                         )
                         : <p className="text-white text-6xl font-medium text-center">No blogs found</p>
                 }
