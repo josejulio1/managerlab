@@ -2,11 +2,13 @@
 
 > Web personal desarrollada para un cliente freelance con panel de administración incluido.
 
+🌐 Web: [ManagerLab](https://managerlab.net)
+
 ## 📋 Sobre el proyecto
 
-**ManagerLab** es una web creada para que un cliente pueda presentarse profesionalmente como freelancer y gestionar su presencia online.
+**ManagerLab** es una web creada para que un cliente pueda presentarse de forma profesional como freelancer y gestionar su presencia online.
 
-La plataforma muestra sus servicios, precios y forma de contacto, además de incluir un blog para publicar contenido y un panel de administración desde el que puede gestionar toda la información de la web.
+La plataforma muestra sus servicios, precios y forma de contacto, e incluye un blog para publicar contenido, además de un panel de administración desde el que puede gestionar toda la información del sitio.
 
 La idea es que tenga una web propia, clara y fácil de mantener, sin depender de herramientas externas.
 
@@ -30,4 +32,4 @@ La idea es que tenga una web propia, clara y fácil de mantener, sin depender de
 
 ## 🚧 Estado del proyecto
 
-En desarrollo continuo, adaptándose a las necesidades del cliente y posibles mejoras en el futuro.
+En desarrollo continuo, con mejoras y ajustes según las necesidades del cliente.
