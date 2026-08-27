@@ -9,7 +9,7 @@ export default function Footer() {
     return (
         <footer className="bg-[var(--bg-color)] p-4 mt-48">
             <section className="max-w-7xl m-auto flex flex-col gap-8 py-16">
-                <article className="flex justify-between items-center md:gap-12 max-md:gap-4 max-md:flex-col">
+                <article className="flex justify-between items-center md:gap-10 max-md:gap-4 max-md:flex-col">
                     <Image
                         src="/img/logo-footer.png"
                         alt="Logo ManagerLab"
