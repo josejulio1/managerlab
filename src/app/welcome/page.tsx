@@ -82,7 +82,7 @@ export default function WelcomePage() {
                                 <li><span className="font-bold">Scheduled</span>: queued, with a date.</li>
                                 <li><span className="font-bold">Live</span>: out in the world.</li>
                             </ol>
-                            <p className="text-center mt-4">Comment <span className="font-bold">on the item itself</span> rather than over email or WhatsApp, that way your feedback stays attached to the thing it's about, and nothing gets lost.</p>
+                            <p className="text-center mt-4">Comment <span className="font-bold">on the item itself</span> rather than over email or WhatsApp, that way your feedback stays attached to the thing it&apos;s about, and nothing gets lost.</p>
                             <article className="mt-4">
                                 <p>Nothing goes live without your approval. If something&apos;s urgent or doesn&apos;t fit the flow, just message us as usual. This workspace is here to make the routine stuff easy, not to add process.</p>
                                 <p>Want to learn more? A few basics to get you started with Notion:</p>
@@ -151,7 +151,7 @@ export default function WelcomePage() {
                     <h1 className="text-4xl font-bold text-center">Your onboarding timeline</h1>
                     <section className="flex flex-col gap-y-2 text-(--color-surface)">
                         <article>
-                            <p>Here's how the first steps typically go:</p>
+                            <p>Here&apos;s how the first steps typically go:</p>
                             <ol className="list-decimal list pl-8 font-bold">
                                 <li>Fill up initial questionnaire</li>
                                 <li>Create Google Drive folders</li>
@@ -165,8 +165,8 @@ export default function WelcomePage() {
                             </ol>
                         </article>
                         <p>We&apos;ll handle the strategy, the setup, and the execution. You focus on running your business and staying in the loop with us.</p>
-                        <p>If you have any questions at any point about the process, the tools, the strategy, anything, just reach out. We're here.</p>
-                        <p>Let's get to work.</p>
+                        <p>If you have any questions at any point about the process, the tools, the strategy, anything, just reach out. We&apos;re here.</p>
+                        <p>Let&apos;s get to work.</p>
                     </section>
                 </section>
             </section>
