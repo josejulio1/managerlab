@@ -11,6 +11,9 @@ export default async function BlogsPage() {
             shortDescription: true,
             slug: true,
             image: true
+        },
+        orderBy: {
+            id: 'desc'
         }
     });
 
