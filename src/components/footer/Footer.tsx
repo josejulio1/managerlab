@@ -40,11 +40,11 @@ export default function Footer() {
                         <div className="flex flex-wrap gap-2 w-40 max-md:justify-center">
                             <SocialNetworkIcon
                                 icon={<FaInstagram />}
-                                href="https://instagram.com/evaferiam"
+                                href="https://www.instagram.com/managerlab_ee"
                             />
                             <SocialNetworkIcon
                                 icon={<FaLinkedin />}
-                                href="https://linkedin.com/in/eva-feria"
+                                href="https://www.linkedin.com/company/managerlabmarketing/about/?viewAsMember=true"
                             />
                         </div>
                     </FooterItem>
