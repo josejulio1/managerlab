@@ -11,12 +11,10 @@ export default function Footer() {
             <section className="max-w-7xl m-auto flex flex-col gap-8 py-16">
                 <article className="flex justify-between items-center md:gap-12 max-md:gap-4 max-md:flex-col">
                     <Image
-                        src="/img/logo.png"
+                        src="/img/logo-footer.png"
                         alt="Logo ManagerLab"
-                        width={0}
-                        height={0}
-                        sizes="100vw"
-                        style={{ width: '50%', height: 'auto' }}
+                        width={600}
+                        height={300}
                     />
                     <h2 className="md:text-[40px] max-md:text-[30px] text-white max-md:text-center">Now you can focus in your business</h2>
                 </article>

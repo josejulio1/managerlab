@@ -26,7 +26,7 @@ export default function LoginPage() {
                 <section className="max-w-lg m-auto rounded-2xl flex flex-col gap-4">
                     <Image
                         className="p-4"
-                        src="/img/logo.png"
+                        src="/img/logo-header.png"
                         alt="Logo ManagerLab"
                         width={0}
                         height={0}

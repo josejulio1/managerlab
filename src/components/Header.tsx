@@ -37,9 +37,9 @@ export default function Header() {
             <section className="flex items-center w-full md:gap-8 max-md:gap-4 max-md:flex-col">
                 <Link href="/">
                     <Image
-                        src="/img/logo.png"
+                        src="/img/logo-header.png"
                         alt="Logo ManagerLab"
-                        width={250}
+                        width={300}
                         height={60}
                     />
                 </Link>
