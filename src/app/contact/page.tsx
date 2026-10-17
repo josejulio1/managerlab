@@ -10,6 +10,7 @@ import TextArea from "@/components/form/items/TextArea";
 import { sendTelegram } from "./actions/action";
 import Form from "@/components/form/Form";
 import SweetAlert from "@/lib/sweetalert";
+import Link from "next/link";
 
 export default function ContactPage() {
     const form = useForm({
@@ -33,57 +34,60 @@ export default function ContactPage() {
                     </article>
                     <p className="text-base text-[var(--color-surface)]">If you want to work with us or just need some advice, we&apos;re always happy to help. Let&apos;s have a great conversation!</p>
                 </section>
-                <FormProvider {...form}>
-                    <Form
-                        submitButtonText="Send"
-                        handleRouteBack={false}
-                        serverAction={sendTelegram}
-                        handlers={{
-                            onSuccess: ({ title, content }) => {
-                                SweetAlert({
-                                    title,
-                                    text: content,
-                                    icon: 'success',
-                                    confirmButtonText: 'Ok'
-                                });
-                            },
-                            onFailure: error => {
-                                SweetAlert({
-                                    title: 'Oops!',
-                                    text: error,
-                                    icon: 'error',
-                                    confirmButtonText: 'Ok'
-                                });
-                            }
-                        }}
-                    >
-                        <section className="flex md:gap-8 max-md:gap-4 max-md:flex-col">
+                <section className="flex flex-col gap-y-4">
+                    <FormProvider {...form}>
+                        <Form
+                            submitButtonText="Send"
+                            handleRouteBack={false}
+                            serverAction={sendTelegram}
+                            handlers={{
+                                onSuccess: ({ title, content }) => {
+                                    SweetAlert({
+                                        title,
+                                        text: content,
+                                        icon: 'success',
+                                        confirmButtonText: 'Ok'
+                                    });
+                                },
+                                onFailure: error => {
+                                    SweetAlert({
+                                        title: 'Oops!',
+                                        text: error,
+                                        icon: 'error',
+                                        confirmButtonText: 'Ok'
+                                    });
+                                }
+                            }}
+                        >
+                            <section className="flex md:gap-8 max-md:gap-4 max-md:flex-col">
+                                <Input
+                                    type="text"
+                                    placeholder="Name"
+                                    name="name"
+                                    autoComplete="name"
+                                />
+                                <Input
+                                    type="email"
+                                    placeholder="Email"
+                                    name="email"
+                                    autoComplete="email"
+                                />
+                            </section>
                             <Input
                                 type="text"
-                                placeholder="Name"
-                                name="name"
-                                autoComplete="name"
+                                placeholder="Subject"
+                                name="subject"
+                                autoComplete="off"
                             />
-                            <Input
-                                type="email"
-                                placeholder="Email"
-                                name="email"
-                                autoComplete="email"
+                            <TextArea
+                                name="message"
+                                placeholder="Message"
+                                rows={5}
                             />
-                        </section>
-                        <Input
-                            type="text"
-                            placeholder="Subject"
-                            name="subject"
-                            autoComplete="off"
-                        />
-                        <TextArea
-                            name="message"
-                            placeholder="Message"
-                            rows={5}
-                        />
-                    </Form>
-                </FormProvider>
+                        </Form>
+                    </FormProvider>
+                    <Link href="/privacy-policy" className="text-(--color-surface) underline">By sending this form you agree to our Privacy Policy</Link>
+                </section>
             </main>
             <Footer />
         </>
