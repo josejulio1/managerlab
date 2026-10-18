@@ -14,7 +14,7 @@ export default function PlanItem({ plan }: Props) {
                 <section className="flex flex-col gap-8">
                     <h6 className="text-white text-2xl uppercase font-medium text-center">{plan.name}</h6>
                     <section className="flex flex-col items-center gap-4">
-                        <p className="text-white text-7xl font-medium text-center">${plan.price} USD</p>
+                        <p className="text-white text-7xl font-medium text-center">${plan.price} <span className="text-2xl">USD</span></p>
                         <p className="text-[var(--color-surface)]">{plan.typePayment}</p>
                     </section>
                 </section>
