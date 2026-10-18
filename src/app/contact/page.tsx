@@ -26,7 +26,7 @@ export default function ContactPage() {
     return (
         <>
             <Header />
-            <main className="max-w-7xl m-auto lg:grid lg:grid-cols-2 lg:gap-48 lg:py-56 max-lg:py-12 max-lg:flex max-lg:flex-col max-lg:gap-12 max-lg items-center p-4">
+            <main className="max-w-7xl m-auto lg:grid lg:grid-cols-2 lg:gap-48 lg:py-30 max-lg:py-12 max-lg:flex max-lg:flex-col max-lg:gap-12 max-lg items-center p-4">
                 <section className="text-5xl flex flex-col gap-2 max-lg:text-center">
                     <article>
                         <h2 className="md:text-5xl max-md:text-[30px] text-white uppercase font-medium">Let&apos;s Connect!</h2>
